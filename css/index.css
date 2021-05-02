@@ -34,6 +34,8 @@ a.active,a:hover{
   transition: .5s;
   text-decoration: underline;
   text-decoration: bold;
+  background-color: #F9F0E0;
+  color: black;
 }
 
 .wrapper{
