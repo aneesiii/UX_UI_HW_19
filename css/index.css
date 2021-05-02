@@ -8,13 +8,15 @@
 
 nav {
   background: rgb(53, 51, 51);
-  height: 50px;
+  height: 5vh;
   width: 100%;
+  display: flex;
 }
 
 nav ul {
-  float: right;
+  display: flex;
   margin-right: 20px;
+  justify-content: flex-end;
 }
 
 nav ul li {
@@ -34,12 +36,19 @@ a.active,a:hover{
   text-decoration: bold;
 }
 
-label.logo {
+.wrapper{
+  justify-content: flex-end;
+  width: 70vw;
+}
+
+.logo {
   color: white;
   font-size: 27px;
   line-height: 50px;
-  padding: 0 60px;
+  /* padding: 0 60px; */
+  text-align: center;
   font-weight: bold;
+  width: 26vw;
 }
 
 .checkbtn {
@@ -98,34 +107,45 @@ label.logo {
 }
 
 section {
-  margin: 2%;
+  /* margin: 2%; */
 }
 
 .mainphoto {
-  max-width: 800px;
-  margin: 40px auto 20px;
+  /* max-width: 80rem; */
+  /* margin: 10% auto 10%; */
+  width: 50vw;
+  background-size: cover;
+  background-image: url("../images/Profile_Pic.png");
+  /* background-size: 300px 100px; */
 }
 
-.mainphoto .floating-image {
-  max-width: 500px;
+/* .mainphoto .floating-image {
+  max-width: 25%;
   margin: 5%;
 }
 
 .mainphoto .floating-image.right {
   float: right;
-}
+} */
 
 .container {
-  background: rgb(218, 209, 198);
-  background-size: stretch;
+  background: #F9F0E0;
+  min-height: 30vh;
+  width: 100vw;
+  display: flex;
+  /* background-size: stretch; */
 }
 
+.maintext{
+  width:50vw;
+  padding: 5px; 
 
+}
 
 
 
 .img-logo {
-  width: 17%;
+  height: 5vh;
   display: block;
   float: left;
   margin-top: auto;
@@ -133,7 +153,22 @@ section {
 }
   
 
-
+.preloader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 100000;
+  background-color: #F9F0E0;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+.preloader img {
+  animation: spin 3s ease;
+  transition: all;
+  width: 150px;
+  margin: 0 auto;
+}
 
 
 
@@ -298,7 +333,7 @@ p {
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 font-size: 25px;
 font-weight: 50;
-padding-left: 80px;
+/* padding-left: 80px; */
 padding-top: 100px;
 justify-content: space-evenly;
 }
